@@ -71,7 +71,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
+          {/* Trust Indicators 
           <div
             className="mt-16 pt-8 border-t border-primary-foreground/10 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.5s" }}
@@ -85,7 +85,8 @@ const Hero = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div>    
+          */}
         </div>
       </div>
 
