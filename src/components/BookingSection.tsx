@@ -60,9 +60,13 @@ const BookingSection = () => {
             </div>
           </div>
 
-          {/* Right Side - Calendar Embed Placeholder */}
-          <div class="calendly-inline-widget" data-url="https://calendly.com/kelvin-kroc/new-meeting" style="min-width:320px;height:700px;"></div>
-          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          {/* Right Side - Calendar Embed */}
+          <div className="bg-card rounded-2xl border border-border overflow-hidden">
+            <div
+              className="calendly-inline-widget"
+              data-url="https://calendly.com/kelvin-kroc/new-meeting"
+              style={{ minWidth: "320px", height: "700px" }}
+            />
           </div>
         </div>
       </div>
