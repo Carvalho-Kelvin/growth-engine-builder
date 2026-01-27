@@ -33,7 +33,7 @@ const Contact = () => {
       description: "We'll get back to you within 24 hours.",
     });
 
-    setFormData({ name: "", email: "", businessType: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", businessType: "", message: "" });
     setIsSubmitting(false);
   };
 
