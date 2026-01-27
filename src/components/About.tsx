@@ -5,23 +5,26 @@ const About = () => {
     {
       icon: MapPin,
       title: "Local Focus",
-      description: "Based in London, Ontario. We understand the local market and are always a phone call away.",
+      description:
+        "Proudly based in London, Ontario. We know the local market and are always just a phone call (or a coffee) away.",
     },
     {
       icon: Users,
       title: "Partner, Not Vendor",
-      description: "We don't just build and disappear. We're invested in your long-term success and growth.",
+      description:
+        "We don’t just build and disappear. We act as your long-term technical partner, invested in your continuous growth and stability.",
     },
     {
       icon: Heart,
       title: "Service-First Mindset",
-      description: "We specialize in service businesses—from contractors to consultants, clinics to coaches.",
+      description:
+        "We specialize in the unique workflows of service businesses—from contractors to consultants, clinics to coaches.",
     },
     {
       icon: Shield,
       title: "No-Nonsense Approach",
       description:
-        "Clear communication, fair pricing, and solutions that actually work. No tech jargon or hidden fees.",
+        "Clear communication, transparent pricing, and solutions that actually solve problems. No tech jargon or hidden fees.",
     },
   ];
 
