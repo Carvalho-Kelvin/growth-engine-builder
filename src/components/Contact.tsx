@@ -59,11 +59,11 @@ const Contact = () => {
               Get Started
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Ready to transform your <span className="text-gradient">digital presence?</span>
+              Ready to Put <span className="text-gradient">Your Website to Work?</span>
             </h2>
             <p className="text-lg text-primary-foreground/70 mb-10 leading-relaxed">
-              Let's discuss how we can help your business grow. Book a free strategy call and discover the potential of
-              your online presence.
+              Stop losing leads and wasting time on manual admin. Book a free strategy call to see exactly how we can
+              automate your business operations.
             </p>
 
             {/* Contact Info */}
@@ -152,12 +152,12 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Tell us about your project
+                  What challenges are you facing? What are your goals?
                 </label>
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="What challenges are you facing? What are your goals?"
+                  placeholder="Getting more leads, Automating manual tasks, Updating an old website, Launching a new business"
                   value={formData.message}
                   onChange={handleChange}
                   required
