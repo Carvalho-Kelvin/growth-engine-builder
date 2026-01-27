@@ -34,10 +34,11 @@ const ValueProposition = () => {
             The Problem
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Your website should work <span className="text-gradient">for you</span>, not against you
+            An inefficient website is <span className="text-gradient">slowing you down</span>,
           </h2>
           <p className="text-lg text-muted-foreground">
-            Most small business websites are just digital brochures. We transform them into growth engines.
+            Most small business websites are just digital brochures. We build custom solutions designed to optimize your
+            workflow, eliminate manual tasks, and help your business grow.
           </p>
         </div>
 
@@ -51,15 +52,17 @@ const ValueProposition = () => {
             >
               {/* Accent Top Border */}
               <div className={`absolute top-0 left-0 right-0 h-1 ${card.accent}`} />
-              
+
               {/* Icon */}
-              <div className={`w-14 h-14 rounded-xl ${card.accent} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+              <div
+                className={`w-14 h-14 rounded-xl ${card.accent} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+              >
                 <card.icon className={`w-7 h-7 ${card.accent === "bg-accent" ? "text-accent" : "text-cta"}`} />
               </div>
 
               {/* Content */}
               <h3 className="text-xl font-bold text-foreground mb-4">{card.title}</h3>
-              
+
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-destructive mt-1">✕</span>
