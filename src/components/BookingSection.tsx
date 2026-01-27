@@ -64,7 +64,7 @@ const BookingSection = () => {
           <div className="bg-card rounded-2xl border border-border overflow-hidden">
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/kelvin-kroc/new-meeting"
+              data-url="https://calendly.com/kelvin-kroc"
               style={{ minWidth: "320px", height: "700px" }}
             />
           </div>
