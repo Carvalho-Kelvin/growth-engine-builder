@@ -55,7 +55,7 @@ const ValueProposition = () => {
 
               {/* Icon */}
               <div
-                className={`w-14 h-14 rounded-xl ${card.accent} bg-opacity-10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 ${card.accent === "bg-accent" ? "bg-accent/10" : "bg-cta/10"}`}
               >
                 <card.icon className={`w-7 h-7 ${card.accent === "bg-accent" ? "text-accent" : "text-cta"}`} />
               </div>
