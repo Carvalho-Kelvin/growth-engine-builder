@@ -20,7 +20,8 @@ const About = () => {
     {
       icon: Shield,
       title: "No-Nonsense Approach",
-      description: "Clear communication, fair pricing, and solutions that actually work. No tech jargon or hidden fees.",
+      description:
+        "Clear communication, fair pricing, and solutions that actually work. No tech jargon or hidden fees.",
     },
   ];
 
@@ -34,13 +35,12 @@ const About = () => {
               Why Choose Us
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Your local digital partner, not a{" "}
-              <span className="text-gradient">faceless agency</span>
+              Your local digital partner, not a <span className="text-gradient">faceless agency</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              We're not a massive agency that treats you like a ticket number. We're a dedicated team 
-              right here in London, Ontario, focused on helping service providers like you succeed online. 
-              When you work with us, you get a real partner who understands your business.
+              Forget about call centers and ticket numbers. We are a dedicated team right here in London, Ontario,
+              building custom solutions for service providers like you. We don't just write code; we take the time to
+              understand your business and help you grow.
             </p>
 
             {/* Stats */}
