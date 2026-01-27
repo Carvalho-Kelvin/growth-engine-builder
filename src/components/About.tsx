@@ -63,12 +63,12 @@ const About = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-8 border-y border-border">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-foreground">5+</div>
-                <div className="text-muted-foreground text-sm">Years Experience</div>
+                <div className="text-3xl md:text-4xl font-bold text-foreground">Custom Built</div>
+                <div className="text-muted-foreground text-sm">Tailored solutions, no generic templates.</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-foreground">50+</div>
-                <div className="text-muted-foreground text-sm">Projects Delivered</div>
+                <div className="text-3xl md:text-4xl font-bold text-foreground">Direct Access</div>
+                <div className="text-muted-foreground text-sm">No sales reps. You work directly with the expert.</div>
               </div>
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-foreground">100%</div>
