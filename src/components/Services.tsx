@@ -6,19 +6,22 @@ const Services = () => {
     {
       icon: Globe,
       title: "Web Development",
-      description: "High-converting landing pages and professional institutional websites that establish your digital presence and capture leads.",
+      description:
+        "High-converting landing pages and professional institutional websites that establish your digital presence and capture leads.",
       features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Lead Capture Forms"],
     },
     {
       icon: Code2,
       title: "Custom Apps & Functionalities",
-      description: "Client portals, booking systems, and dashboards tailored to your specific business needs and workflows.",
+      description:
+        "Client portals, booking systems, and dashboards tailored to your specific business needs and workflows.",
       features: ["Client Portals", "Booking Systems", "Custom Dashboards", "Payment Integration"],
     },
     {
       icon: Workflow,
       title: "Process Automation",
-      description: "Connect your tools and automate repetitive tasks to streamline operations and free up your valuable time.",
+      description:
+        "Connect your tools and automate repetitive tasks to streamline operations and free up your valuable time.",
       features: ["Tool Integration", "Automated Workflows", "Email Sequences", "Data Sync"],
     },
   ];
@@ -32,10 +35,11 @@ const Services = () => {
             Our Services
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Everything you need to <span className="text-gradient">grow online</span>
+            Simple Tools for Complex Problems
           </h2>
           <p className="text-lg text-muted-foreground">
-            From stunning websites to powerful automations, we provide end-to-end digital solutions for service businesses.
+            From high-converting websites to time-saving automations, we provide the exact digital tools service
+            businesses need to grow without the tech headache.
           </p>
         </div>
 
