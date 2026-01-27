@@ -67,17 +67,12 @@ const BookingSection = () => {
               className="min-h-[600px] flex flex-col items-center justify-center p-8 text-center"
               style={{ minHeight: "600px" }}
             >
-              {/* 
-                REPLACE THIS PLACEHOLDER WITH YOUR CALENDLY EMBED:
-                
-                <iframe
-                  src="https://calendly.com/YOUR-CALENDLY-LINK"
-                  width="100%"
-                  height="600"
-                  frameBorder="0"
-                  title="Schedule a call"
-                />
-              */}
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/kelvin-kroc/new-meeting"
+                style="min-width:320px;height:700px;"
+              ></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
                 <Calendar className="w-8 h-8 text-accent animate-pulse" />
               </div>
@@ -86,7 +81,7 @@ const BookingSection = () => {
                 Replace this placeholder with your Calendly or Cal.com embed link
               </p>
               <div className="mt-6 px-4 py-2 rounded-lg bg-secondary text-sm text-muted-foreground font-mono">
-                calendly.com/your-link
+                calendly.com/your-link'
               </div>
             </div>
           </div>
