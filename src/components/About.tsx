@@ -1,4 +1,5 @@
-import { MapPin, Users, Heart, Shield } from "lucide-react";
+import { MapPin, Users, Heart, Shield, User } from "lucide-react";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const About = () => {
   const values = [
@@ -45,6 +46,19 @@ const About = () => {
               building custom solutions for service providers like you. We don't just write code; we take the time to
               understand your business and help you grow.
             </p>
+
+            {/* Photo Section */}
+            <div className="mb-8 flex items-center gap-6">
+              <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-accent/20 bg-secondary flex items-center justify-center">
+                {/* Replace this placeholder with your actual image */}
+                {/* <img src="/your-photo.jpg" alt="Founder photo" className="w-full h-full object-cover" /> */}
+                <User className="w-12 h-12 text-muted-foreground" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-foreground">Your Name</h3>
+                <p className="text-muted-foreground">Founder & Lead Developer</p>
+              </div>
+            </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-8 border-y border-border">
