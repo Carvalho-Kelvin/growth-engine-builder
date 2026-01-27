@@ -32,9 +32,9 @@ const BookingSection = () => {
                 Let's Find the Bottlenecks in Your Business
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                This free 30-minute strategy call is designed to uncover the hidden inefficiencies 
-                costing you time and money. Whether it's manual scheduling, missed follow-ups, or 
-                an outdated website — we'll map it out together and show you a path forward.
+                This free 60-minute strategy call is designed to uncover the hidden inefficiencies costing you time and
+                money. Whether it's manual scheduling, missed follow-ups, or an outdated website — we'll map it out
+                together and show you a path forward.
               </p>
             </div>
 
@@ -63,9 +63,9 @@ const BookingSection = () => {
           {/* Right Side - Calendar Embed Placeholder */}
           <div className="bg-card rounded-2xl border border-border shadow-lg overflow-hidden">
             {/* Calendar Placeholder - Replace with your Calendly embed */}
-            <div 
+            <div
               className="min-h-[600px] flex flex-col items-center justify-center p-8 text-center"
-              style={{ minHeight: '600px' }}
+              style={{ minHeight: "600px" }}
             >
               {/* 
                 REPLACE THIS PLACEHOLDER WITH YOUR CALENDLY EMBED:
