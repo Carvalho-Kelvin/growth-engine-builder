@@ -25,10 +25,10 @@ const Footer = () => {
       ],
     },
     {
-      title: "Legal",
+      title: "Contact",
       links: [
-        { label: "Privacy Policy", href: "#" },
-        { label: "Terms of Service", href: "#" },
+        { label: "(226) 998-8057", href: "#" },
+        { label: "kelvin.kroc@gmail.com", href: "#" },
       ],
     },
   ];
