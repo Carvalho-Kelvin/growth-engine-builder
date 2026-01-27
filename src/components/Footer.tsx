@@ -22,7 +22,6 @@ const Footer = () => {
       links: [
         { label: "About Us", href: "#about" },
         { label: "Contact", href: "#contact" },
-        { label: "Blog", href: "#" },
       ],
     },
     {
@@ -47,8 +46,7 @@ const Footer = () => {
               <span className="font-bold text-xl">DigitalFlow</span>
             </div>
             <p className="text-primary-foreground/60 mb-6 max-w-sm leading-relaxed">
-              Helping small businesses and service providers grow through powerful, 
-              beautifully crafted digital solutions.
+              Helping service providers in London, ON save time and grow through automated websites and custom apps.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -72,10 +70,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a
-                      href={link.href}
-                      className="text-primary-foreground/60 hover:text-accent transition-colors"
-                    >
+                    <a href={link.href} className="text-primary-foreground/60 hover:text-accent transition-colors">
                       {link.label}
                     </a>
                   </li>
@@ -90,9 +85,7 @@ const Footer = () => {
           <p className="text-primary-foreground/50 text-sm">
             © {new Date().getFullYear()} DigitalFlow. All rights reserved.
           </p>
-          <p className="text-primary-foreground/50 text-sm">
-            Made with ❤️ in London, Ontario
-          </p>
+          <p className="text-primary-foreground/50 text-sm">Made with ❤️ in London, Ontario</p>
         </div>
       </div>
     </footer>
