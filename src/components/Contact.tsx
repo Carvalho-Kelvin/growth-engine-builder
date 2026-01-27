@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, label: "Phone", value: "(519) 555-0123" },
+    { icon: Phone, label: "Phone", value: "(226) 998-8057" },
     { icon: Mail, label: "Email", value: "hello@digitalflow.ca" },
     { icon: MapPin, label: "Location", value: "London, Ontario" },
   ];
