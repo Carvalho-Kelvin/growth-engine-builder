@@ -1,4 +1,5 @@
-import { CheckCircle, Calendar } from "lucide-react";
+import { useEffect } from "react"; // <--- 1. Importe isso se não estiver importado
+import { CheckCircle, Calendar } from "lucide-react"; // Assumindo que você usa lucide-react
 
 const BookingSection = () => {
   const benefits = [
@@ -6,6 +7,21 @@ const BookingSection = () => {
     "Immediate insights — Walk away with actionable ideas",
     "No obligation — Just a conversation to explore possibilities",
   ];
+
+  // <--- 2. Adicione este bloco aqui
+  useEffect(() => {
+    const head = document.querySelector("head");
+    const script = document.createElement("script");
+    script.setAttribute("src", "https://assets.calendly.com/assets/external/widget.js");
+    script.setAttribute("async", "true");
+    head.appendChild(script);
+
+    return () => {
+      // Limpeza opcional (boa prática)
+      head.removeChild(script);
+    };
+  }, []);
+  // --- Fim do bloco adicionado
 
   return (
     <section id="booking" className="py-20 md:py-32 bg-secondary/30">
@@ -62,6 +78,7 @@ const BookingSection = () => {
 
           {/* Right Side - Calendar Embed */}
           <div className="bg-card rounded-2xl border border-border overflow-hidden">
+            {/* O Calendly precisa deste container exato para funcionar */}
             <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/kelvin-kroc"
