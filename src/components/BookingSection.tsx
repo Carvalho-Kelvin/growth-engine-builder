@@ -68,11 +68,10 @@ const BookingSection = () => {
               style={{ minHeight: "600px" }}
             >
               <div
-                class="calendly-inline-widget"
+                className="calendly-inline-widget"
                 data-url="https://calendly.com/kelvin-kroc/new-meeting"
-                style="min-width:320px;height:700px;"
-              ></div>
-              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                style={{ minWidth: "320px", height: "700px" }}
+              />
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
                 <Calendar className="w-8 h-8 text-accent animate-pulse" />
               </div>
