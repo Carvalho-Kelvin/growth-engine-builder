@@ -55,7 +55,7 @@ const About = () => {
                 <User className="w-12 h-12 text-muted-foreground" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-foreground">Your Name</h3>
+                <h3 className="text-xl font-bold text-foreground">Kelvin Carvalho</h3>
                 <p className="text-muted-foreground">Founder & Lead Developer</p>
               </div>
             </div>
