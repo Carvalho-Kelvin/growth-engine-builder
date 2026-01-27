@@ -3,8 +3,6 @@ import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 const Footer = () => {
   const socialLinks = [
     { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Facebook, href: "#", label: "Facebook" },
     { icon: Instagram, href: "#", label: "Instagram" },
   ];
 
