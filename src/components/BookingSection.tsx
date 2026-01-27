@@ -61,28 +61,8 @@ const BookingSection = () => {
           </div>
 
           {/* Right Side - Calendar Embed Placeholder */}
-          <div className="bg-card rounded-2xl border border-border shadow-lg overflow-hidden">
-            {/* Calendar Placeholder - Replace with your Calendly embed */}
-            <div
-              className="min-h-[600px] flex flex-col items-center justify-center p-8 text-center"
-              style={{ minHeight: "600px" }}
-            >
-              <div
-                className="calendly-inline-widget"
-                data-url="https://calendly.com/kelvin-kroc/new-meeting"
-                style={{ minWidth: "320px", height: "700px" }}
-              />
-              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-6">
-                <Calendar className="w-8 h-8 text-accent animate-pulse" />
-              </div>
-              <h4 className="text-xl font-semibold text-foreground mb-2">Calendar Loading...</h4>
-              <p className="text-muted-foreground text-sm max-w-xs">
-                Replace this placeholder with your Calendly or Cal.com embed link
-              </p>
-              <div className="mt-6 px-4 py-2 rounded-lg bg-secondary text-sm text-muted-foreground font-mono">
-                calendly.com/your-link'
-              </div>
-            </div>
+          <div class="calendly-inline-widget" data-url="https://calendly.com/kelvin-kroc/new-meeting" style="min-width:320px;height:700px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
           </div>
         </div>
       </div>
