@@ -120,13 +120,13 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                  Phone Number
+                  Phone
                 </label>
                 <Input
                   id="phone"
                   name="phone"
                   type="tel"
-                  placeholder="(111) 111-1111"
+                  placeholder="Your Phone Number"
                   value={formData.phone}
                   onChange={handleChange}
                   required
