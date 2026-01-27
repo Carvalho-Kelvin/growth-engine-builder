@@ -7,22 +7,27 @@ const Services = () => {
       icon: Globe,
       title: "Web Development",
       description:
-        "High-converting landing pages and professional institutional websites that establish your digital presence and capture leads.",
-      features: ["Responsive Design", "SEO Optimized", "Fast Loading", "Lead Capture Forms"],
+        "Professional websites and high-converting landing pages designed to establish your brand and turn visitors into clients.",
+      features: ["Mobile-First Design", "SEO Optimized", "Fast Loading", "Lead Capture Forms"],
     },
     {
       icon: Code2,
       title: "Custom Apps & Functionalities",
       description:
         "Client portals, booking systems, and dashboards tailored to your specific business needs and workflows.",
-      features: ["Client Portals", "Booking Systems", "Custom Dashboards", "Payment Integration"],
+      features: [
+        "Secure Client Portals",
+        "Automated Booking Systems",
+        "Custom Dashboards",
+        "Online Payment Integration",
+      ],
     },
     {
       icon: Workflow,
       title: "Process Automation",
       description:
-        "Connect your tools and automate repetitive tasks to streamline operations and free up your valuable time.",
-      features: ["Tool Integration", "Automated Workflows", "Email Sequences", "Data Sync"],
+        "Connect your favorite tools to automate repetitive tasks, eliminate human error, and free up your valuable time.",
+      features: ["Tool Integration", "Automated Workflows", "Smart Email Sequences", "Auto-Sync Data"],
     },
   ];
 
@@ -71,7 +76,7 @@ const Services = () => {
 
               {/* CTA */}
               <Button variant="outline" className="w-full group/btn">
-                Learn More
+                Get a Quote
                 <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
               </Button>
             </div>
