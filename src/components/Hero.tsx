@@ -58,15 +58,15 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <Button variant="hero" size="xl" asChild>
-              <a href="#contact" className="group">
+              <a href="#bookingsection" className="group">
                 Book Your Free Strategy Session
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="#services">
+              <a href="#contact">
                 <Play size={18} className="mr-2" />
-                See Our Work
+                Contact Us
               </a>
             </Button>
           </div>
