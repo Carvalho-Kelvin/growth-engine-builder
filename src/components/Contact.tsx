@@ -11,6 +11,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     businessType: "",
     message: "",
   });
@@ -58,12 +59,11 @@ const Contact = () => {
               Get Started
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-              Ready to transform your{" "}
-              <span className="text-gradient">digital presence?</span>
+              Ready to transform your <span className="text-gradient">digital presence?</span>
             </h2>
             <p className="text-lg text-primary-foreground/70 mb-10 leading-relaxed">
-              Let's discuss how we can help your business grow. Book a free strategy call 
-              and discover the potential of your online presence.
+              Let's discuss how we can help your business grow. Book a free strategy call and discover the potential of
+              your online presence.
             </p>
 
             {/* Contact Info */}
@@ -119,6 +119,22 @@ const Contact = () => {
               </div>
 
               <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
+                  Phone Number
+                </label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="(111) 111-1111"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  className="h-12"
+                />
+              </div>
+
+              <div>
                 <label htmlFor="businessType" className="block text-sm font-medium text-foreground mb-2">
                   Business Type
                 </label>
@@ -149,13 +165,7 @@ const Contact = () => {
                 />
               </div>
 
-              <Button
-                type="submit"
-                variant="cta"
-                size="lg"
-                className="w-full"
-                disabled={isSubmitting}
-              >
+              <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isSubmitting}>
                 {isSubmitting ? (
                   "Sending..."
                 ) : (
@@ -166,9 +176,7 @@ const Contact = () => {
                 )}
               </Button>
 
-              <p className="text-center text-sm text-muted-foreground">
-                We'll respond within 24 hours. No spam, ever.
-              </p>
+              <p className="text-center text-sm text-muted-foreground">We'll respond within 24 hours. No spam, ever.</p>
             </form>
           </div>
         </div>
