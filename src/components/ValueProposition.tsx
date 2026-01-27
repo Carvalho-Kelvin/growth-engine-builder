@@ -34,7 +34,7 @@ const ValueProposition = () => {
             The Problem
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            An inefficient website is <span className="text-gradient">slowing you down</span>,
+            An inefficient website is <span className="text-gradient">slowing you down</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Most small business websites are just digital brochures. We build custom solutions designed to optimize your
