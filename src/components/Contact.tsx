@@ -61,7 +61,7 @@ const Contact = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
               Ready to Put <span className="text-gradient">Your Website to Work?</span>
             </h2>
-            <p className="text-lg text-primary-foreground/70 mb-10 leading-relaxed">
+            <p className="text-lg text-white/80 mb-10 leading-relaxed">
               Stop losing leads and wasting time on manual admin. Book a free strategy call to see exactly how we can
               automate your business operations.
             </p>
@@ -74,8 +74,8 @@ const Contact = () => {
                     <item.icon className="w-5 h-5 text-accent" />
                   </div>
                   <div>
-                    <div className="text-primary-foreground/50 text-sm">{item.label}</div>
-                    <div className="text-primary-foreground font-medium">{item.value}</div>
+                    <div className="text-white/60 text-sm">{item.label}</div>
+                    <div className="text-white font-medium">{item.value}</div>
                   </div>
                 </div>
               ))}
