@@ -42,8 +42,7 @@ const Footer = () => {
               <img src={logo} alt="ErgoSystems" className="h-12 w-auto" />
             </div>
             <p className="text-primary-foreground/60 mb-6 max-w-sm leading-relaxed">
-              Helping small business and service providers in London, ON save time and grow through automated websites
-              and custom apps.
+              Helping service providers in London, ON save time and grow through automated websites and custom apps.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -82,7 +81,6 @@ const Footer = () => {
           <p className="text-primary-foreground/50 text-sm">
             © {new Date().getFullYear()} ErgoSystems. All rights reserved.
           </p>
-          <p className="text-primary-foreground/50 text-sm">Made with ❤️ in London, Ontario</p>
         </div>
       </div>
     </footer>
