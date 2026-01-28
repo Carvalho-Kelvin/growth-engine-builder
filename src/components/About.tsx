@@ -1,5 +1,5 @@
-import { MapPin, Users, Heart, Shield, User } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { MapPin, Users, Heart, Shield } from "lucide-react";
+import founderPhoto from "@/assets/founder-photo.jpg";
 
 const About = () => {
   const values = [
@@ -49,10 +49,8 @@ const About = () => {
 
             {/* Photo Section */}
             <div className="mb-8 flex items-center gap-6">
-              <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-accent/20 bg-secondary flex items-center justify-center">
-                {/* Replace this placeholder with your actual image */}
-                {/* <img src="/your-photo.jpg" alt="Founder photo" className="w-full h-full object-cover" /> */}
-                <User className="w-12 h-12 text-muted-foreground" />
+              <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-accent/20 bg-secondary">
+                <img src={founderPhoto} alt="Kelvin Carvalho - Founder" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground">Kelvin Carvalho</h3>
