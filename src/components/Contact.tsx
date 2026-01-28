@@ -25,16 +25,34 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwZlp4dLRejMKwNdMB3Y5NOYSWTWuui9bSwbneQHhtelmHWI4LVkQsJYUP0evUQNYP9/exec";
 
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
+    try {
+      await fetch(scriptURL, {
+        method: "POST",
+        // Importante: use text/plain para evitar "preflight" do navegador
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(formData),
+      });
 
-    setFormData({ name: "", email: "", phone: "", businessType: "", message: "" });
-    setIsSubmitting(false);
+      // Sucesso (Como usamos no-cors, assumimos que foi se não deu erro de rede)
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you within 24 hours.",
+      });
+
+      setFormData({ name: "", email: "", phone: "", businessType: "", message: "" });
+    } catch (error) {
+      console.error("Erro:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
