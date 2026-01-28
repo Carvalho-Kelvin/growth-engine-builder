@@ -40,7 +40,7 @@ const Hero = () => {
 
           {/* Main Headline */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 opacity-0 animate-fade-in"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
             Turn Your Website Into <span className="text-gradient">Your Best Employee</span>
