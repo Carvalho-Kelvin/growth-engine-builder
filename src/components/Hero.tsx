@@ -35,7 +35,9 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
             </span>
-            <span className="text-accent font-mono text-[10px] md:text-xs font-medium uppercase tracking-wide">London, Ontario's Digital Partner</span>
+            <span className="text-accent font-mono text-[10px] md:text-xs font-medium uppercase tracking-wide">
+              London, Ontario's Digital Partner
+            </span>
           </div>
 
           {/* Main Headline */}
@@ -43,7 +45,7 @@ const Hero = () => {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4 md:mb-6 opacity-0 animate-fade-in px-2"
             style={{ animationDelay: "0.2s" }}
           >
-            Turn Your Website Into <span className="text-gradient">Your Best Employee</span>
+            Turn Your Systems Into <span className="text-gradient">Your Best Employees</span>
           </h1>
 
           {/* Subheadline */}
