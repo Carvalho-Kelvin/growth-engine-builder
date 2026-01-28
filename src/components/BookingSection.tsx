@@ -1,5 +1,4 @@
-import { useEffect } from "react"; // <--- 1. Importe isso se não estiver importado
-import { CheckCircle, Calendar } from "lucide-react"; // Assumindo que você usa lucide-react
+import { CheckCircle, Calendar } from "lucide-react";
 
 const BookingSection = () => {
   const benefits = [
@@ -7,21 +6,6 @@ const BookingSection = () => {
     "Immediate insights — Walk away with actionable ideas",
     "No obligation — Just a conversation to explore possibilities",
   ];
-
-  // <--- 2. Adicione este bloco aqui
-  useEffect(() => {
-    const head = document.querySelector("head");
-    const script = document.createElement("script");
-    script.setAttribute("src", "https://assets.calendly.com/assets/external/widget.js");
-    script.setAttribute("async", "true");
-    head.appendChild(script);
-
-    return () => {
-      // Limpeza opcional (boa prática)
-      head.removeChild(script);
-    };
-  }, []);
-  // --- Fim do bloco adicionado
 
   return (
     <section id="booking" className="py-20 md:py-32 bg-secondary/30">
@@ -71,19 +55,26 @@ const BookingSection = () => {
               <Calendar className="w-10 h-10 text-accent" />
               <div>
                 <p className="font-semibold text-foreground">Pick a time that works for you</p>
-                <p className="text-sm text-muted-foreground">Virtual meetings available across all time zones</p>
+                <p className="text-sm text-muted-foreground">Synced directly with Google Calendar</p>
               </div>
             </div>
           </div>
 
-          {/* Right Side - Calendar Embed */}
-          <div className="bg-card rounded-2xl border border-border overflow-hidden">
-            {/* O Calendly precisa deste container exato para funcionar */}
-            <div
-              className="calendly-inline-widget"
-              data-url="https://calendly.com/kelvin-kroc"
-              style={{ minWidth: "320px", height: "700px" }}
-            />
+          {/* Right Side - Google Calendar Embed */}
+          <div className="bg-card rounded-2xl border border-border overflow-hidden h-[700px]">
+            <iframe
+              src=<iframe
+                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3hVDLUMjopQm8JVMqvG43dO5TevfMOuBXOX4PzaeEUmDRtYS3DSOX93fMpl7Aa14a_rkcT68uU?gv=true"
+                style="border: 0"
+                width="100%"
+                height="600"
+                frameborder="0"
+              ></iframe>
+              style={{ border: 0 }}
+              width="100%"
+              height="100%"
+              frameBorder="0"
+            ></iframe>
           </div>
         </div>
       </div>
