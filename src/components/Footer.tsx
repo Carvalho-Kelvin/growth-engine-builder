@@ -1,4 +1,5 @@
-import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const socialLinks = [
@@ -37,11 +38,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-accent-gradient flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-lg">D</span>
-              </div>
-              <span className="font-bold text-xl">ErgoSystems</span>
+            <div className="mb-4">
+              <img src={logo} alt="ErgoSystems" className="h-12 w-auto" />
             </div>
             <p className="text-primary-foreground/60 mb-6 max-w-sm leading-relaxed">
               Helping service providers in London, ON save time and grow through automated websites and custom apps.
