@@ -73,12 +73,6 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-
-              {/* CTA */}
-              <Button variant="outline" className="w-full group/btn">
-                Get a Quote
-                <ArrowRight className="ml-2 w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-              </Button>
             </div>
           ))}
         </div>
@@ -87,7 +81,7 @@ const Services = () => {
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">Not sure what you need? Let's talk about your goals.</p>
           <Button variant="cta" size="lg" asChild>
-            <a href="#booking">
+            <a href="#contact">
               Schedule a Free Consultation
               <ArrowRight className="ml-2" />
             </a>
