@@ -41,7 +41,7 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-lg bg-accent-gradient flex items-center justify-center">
                 <span className="text-accent-foreground font-bold text-lg">D</span>
               </div>
-              <span className="font-bold text-xl">DigitalFlow</span>
+              <span className="font-bold text-xl">ErgoSystems</span>
             </div>
             <p className="text-primary-foreground/60 mb-6 max-w-sm leading-relaxed">
               Helping service providers in London, ON save time and grow through automated websites and custom apps.
@@ -81,7 +81,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {new Date().getFullYear()} DigitalFlow. All rights reserved.
+            © {new Date().getFullYear()} ErgoSystems. All rights reserved.
           </p>
           <p className="text-primary-foreground/50 text-sm">Made with ❤️ in London, Ontario</p>
         </div>
