@@ -49,8 +49,8 @@ const About = () => {
 
             {/* Photo Section */}
             <div className="mb-8 flex items-center gap-6">
-              <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl overflow-hidden border-2 border-accent/20 bg-secondary">
-                <img src={founderPhoto} alt="Kelvin Carvalho - Founder" className="w-full h-full object-cover" />
+              <div className="w-32 h-40 md:w-40 md:h-52 rounded-2xl overflow-hidden border-2 border-accent/20 bg-secondary">
+                <img src={founderPhoto} alt="Kelvin Carvalho - Founder" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground">Kelvin Carvalho</h3>
