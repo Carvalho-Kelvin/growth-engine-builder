@@ -27,7 +27,7 @@ const Footer = () => {
       title: "Contact",
       links: [
         { label: "(226) 998-8057", href: "#" },
-        { label: "kelvin.kroc@gmail.com", href: "#" },
+        { label: "kelvin@ergosystems.tech", href: "#" },
       ],
     },
   ];
