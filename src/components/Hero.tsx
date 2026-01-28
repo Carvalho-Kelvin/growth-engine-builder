@@ -24,23 +24,23 @@ const Hero = () => {
         }}
       />
 
-      <div className="section-container relative z-10 pt-20 md:pt-0">
+      <div className="section-container relative z-10 pt-24 pb-16 md:pt-0 md:pb-0">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge - System Status */}
           <div
-            className="inline-flex items-center gap-3 px-4 py-2 rounded-md bg-accent/10 border border-accent/20 mb-8 opacity-0 animate-fade-in"
+            className="inline-flex items-center gap-2 md:gap-3 px-3 md:px-4 py-2 rounded-md bg-accent/10 border border-accent/20 mb-6 md:mb-8 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            <span className="relative flex h-2 w-2">
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
             </span>
-            <span className="text-accent font-mono text-xs font-medium uppercase tracking-wide">London, Ontario's Digital Partner</span>
+            <span className="text-accent font-mono text-[10px] md:text-xs font-medium uppercase tracking-wide">London, Ontario's Digital Partner</span>
           </div>
 
           {/* Main Headline */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 opacity-0 animate-fade-in"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4 md:mb-6 opacity-0 animate-fade-in px-2"
             style={{ animationDelay: "0.2s" }}
           >
             Turn Your Website Into <span className="text-gradient">Your Best Employee</span>
@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p
-            className="text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in"
+            className="text-base md:text-lg lg:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed opacity-0 animate-fade-in px-4"
             style={{ animationDelay: "0.3s" }}
           >
             We build websites and custom apps that help local businesses save time, automate tasks, and get more
@@ -57,18 +57,18 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 opacity-0 animate-fade-in px-4"
             style={{ animationDelay: "0.4s" }}
           >
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="hero" size="lg" className="w-full sm:w-auto md:text-base" asChild>
               <a href="#booking" className="group">
-                Book Your Free Strategy Session
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
+                Book Free Strategy Session
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
               </a>
             </Button>
-            <Button variant="heroOutline" size="xl" asChild>
+            <Button variant="heroOutline" size="lg" className="w-full sm:w-auto md:text-base" asChild>
               <a href="#contact">
-                <Play size={18} className="mr-2" />
+                <Play size={16} className="mr-2" />
                 Contact Us
               </a>
             </Button>
