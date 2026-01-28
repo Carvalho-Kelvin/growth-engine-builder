@@ -58,7 +58,7 @@ const Contact = () => {
             <span className="inline-block px-4 py-1.5 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 font-semibold text-sm mb-4">
               Get Started
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-white">
               Ready to Put <span className="text-gradient">Your Website to Work?</span>
             </h2>
             <p className="text-lg text-primary-foreground/70 mb-10 leading-relaxed">
