@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,87 +7,91 @@
 
 @layer base {
   :root {
-    /* Deep Navy Blue - Trust & Technology */
-    --background: 220 20% 98%;
-    --foreground: 222 47% 11%;
+    /* Dark Mode - Tech Aesthetic */
+    --background: 220 20% 7%;
+    --foreground: 150 20% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 220 20% 10%;
+    --card-foreground: 150 20% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 150 20% 95%;
 
-    /* Deep Navy Primary */
-    --primary: 222 47% 15%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep Navy */
+    --primary: 150 20% 95%;
+    --primary-foreground: 220 20% 7%;
 
-    /* Light Blue Secondary */
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    /* Secondary - Darker shade */
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 150 20% 95%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 10% 55%;
 
-    /* Vibrant Teal/Green Accent - Growth */
-    --accent: 162 63% 41%;
-    --accent-foreground: 0 0% 100%;
+    /* Emerald Green Accent - Growth & Profit */
+    --accent: 152 76% 45%;
+    --accent-foreground: 220 20% 7%;
 
-    /* Warm Orange CTA */
-    --cta: 24 95% 53%;
-    --cta-foreground: 0 0% 100%;
+    /* CTA - Emerald Green (aligned with accent) */
+    --cta: 152 76% 45%;
+    --cta-foreground: 220 20% 7%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 150 20% 95%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 47% 15%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 152 76% 45%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(222, 47%, 11%) 0%, hsl(222, 47%, 20%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(162, 63%, 41%) 0%, hsl(162, 73%, 51%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(24, 95%, 53%) 0%, hsl(24, 95%, 63%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 40%, 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(220, 20%, 7%) 0%, hsl(220, 20%, 12%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(152, 76%, 40%) 0%, hsl(152, 76%, 50%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(152, 76%, 40%) 0%, hsl(152, 76%, 50%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220, 20%, 10%) 0%, hsl(220, 20%, 8%) 100%);
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-glow: 0 0 40px -10px hsl(162, 63%, 41%, 0.4);
-    --shadow-cta: 0 10px 30px -10px hsl(24, 95%, 53%, 0.5);
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.4), 0 8px 10px -6px rgb(0 0 0 / 0.3);
+    --shadow-glow: 0 0 40px -10px hsl(152, 76%, 45%, 0.5);
+    --shadow-cta: 0 10px 30px -10px hsl(152, 76%, 45%, 0.4);
   }
 
   .dark {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    /* Dark mode inherits root - already dark by default */
+    --background: 220 20% 7%;
+    --foreground: 150 20% 95%;
 
-    --card: 222 47% 15%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 20% 10%;
+    --card-foreground: 150 20% 95%;
 
-    --popover: 222 47% 15%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 150 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 150 20% 95%;
+    --primary-foreground: 220 20% 7%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 20% 14%;
+    --secondary-foreground: 150 20% 95%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 20% 14%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 162 63% 41%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 152 76% 45%;
+    --accent-foreground: 220 20% 7%;
+
+    --cta: 152 76% 45%;
+    --cta-foreground: 220 20% 7%;
 
     --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 150 20% 95%;
 
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 212 27% 84%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 152 76% 45%;
   }
 }
 

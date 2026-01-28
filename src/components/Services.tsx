@@ -53,21 +53,21 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-border hover:border-accent/30"
+              className="group bg-card rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 border border-white/5 hover:border-accent/50"
             >
               {/* Icon */}
-              <div className="w-16 h-16 rounded-2xl bg-accent-gradient flex items-center justify-center mb-6 shadow-glow group-hover:scale-110 transition-transform duration-300">
-                <service.icon className="w-8 h-8 text-accent-foreground" />
+              <div className="w-14 h-14 rounded-lg bg-accent/10 border border-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
+                <service.icon className="w-7 h-7 text-accent" />
               </div>
 
               {/* Content */}
-              <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-foreground mb-4">{service.title}</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm">{service.description}</p>
 
               {/* Features */}
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center gap-3 text-foreground">
+                  <li key={featureIndex} className="flex items-center gap-3 text-foreground font-mono text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent" />
                     {feature}
                   </li>

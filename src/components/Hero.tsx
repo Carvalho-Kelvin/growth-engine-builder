@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" />
         <div
-          className="absolute bottom-1/4 -left-20 w-80 h-80 bg-cta/10 rounded-full blur-3xl animate-float"
+          className="absolute bottom-1/3 -left-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "1s" }}
         />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-accent/5 to-transparent rounded-full" />
@@ -16,23 +16,26 @@ const Hero = () => {
 
       {/* Grid Pattern */}
       <div
-        className="absolute inset-0 opacity-10"
+        className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
-                           linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, hsl(152, 76%, 45%, 0.3) 1px, transparent 1px),
+                           linear-gradient(to bottom, hsl(152, 76%, 45%, 0.3) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
         }}
       />
 
       <div className="section-container relative z-10 pt-20 md:pt-0">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */}
+          {/* Badge - System Status */}
           <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 mb-8 opacity-0 animate-fade-in"
+            className="inline-flex items-center gap-3 px-4 py-2 rounded-md bg-accent/10 border border-accent/20 mb-8 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.1s" }}
           >
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            <span className="text-primary-foreground/80 text-sm font-medium">London, Ontario's Digital Partner</span>
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+            </span>
+            <span className="text-accent font-mono text-xs font-medium uppercase tracking-wide">London, Ontario's Digital Partner</span>
           </div>
 
           {/* Main Headline */}
