@@ -79,10 +79,10 @@ const Services = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-6">Let's talk about your goals.</p>
+          <p className="text-muted-foreground mb-6">Let's talk about your goals!</p>
           <Button variant="cta" size="lg" asChild>
             <a href="#contact">
-              Schedule a Free Consultation
+              Schedule a Free Strategy Session
               <ArrowRight className="ml-2" />
             </a>
           </Button>
