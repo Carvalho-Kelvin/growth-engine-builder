@@ -87,8 +87,8 @@ const Services = () => {
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">Not sure what you need? Let's talk about your goals.</p>
           <Button variant="cta" size="lg" asChild>
-            <a href="#contact">
-              Schedule a Free Strategy Session
+            <a href="#booking">
+              Schedule a Free Consultation
               <ArrowRight className="ml-2" />
             </a>
           </Button>
