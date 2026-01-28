@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p
-            className="text-base md:text-lg lg:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed opacity-0 animate-fade-in px-4"
+            className="text-base md:text-lg lg:text-xl text-white/80 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed opacity-0 animate-fade-in px-4"
             style={{ animationDelay: "0.3s" }}
           >
             We build websites and custom apps that help local businesses save time, automate tasks, and get more
