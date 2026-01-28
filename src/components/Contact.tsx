@@ -39,7 +39,7 @@ const Contact = () => {
 
   const contactInfo = [
     { icon: Phone, label: "Phone", value: "(226) 998-8057" },
-    { icon: Mail, label: "Email", value: "kelvin.kroc@gmail.com" },
+    { icon: Mail, label: "Email", value: "kelvin@ergosystems.tech" },
     { icon: MapPin, label: "Location", value: "London, Ontario" },
   ];
 
