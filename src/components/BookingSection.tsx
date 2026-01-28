@@ -63,13 +63,7 @@ const BookingSection = () => {
           {/* Right Side - Google Calendar Embed */}
           <div className="bg-card rounded-2xl border border-border overflow-hidden h-[700px]">
             <iframe
-              src=<iframe
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3hVDLUMjopQm8JVMqvG43dO5TevfMOuBXOX4PzaeEUmDRtYS3DSOX93fMpl7Aa14a_rkcT68uU?gv=true"
-                style="border: 0"
-                width="100%"
-                height="600"
-                frameborder="0"
-              ></iframe>
+              src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3hVDLUMjopQm8JVMqvG43dO5TevfMOuBXOX4PzaeEUmDRtYS3DSOX93fMpl7Aa14a_rkcT68uU?gv=true"
               style={{ border: 0 }}
               width="100%"
               height="100%"
